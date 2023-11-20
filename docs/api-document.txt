@@ -1,0 +1,91 @@
+GET Events API :
+
+METHOD : "GET"
+URL : BASE_PATH/api/events
+Query Parameters :
+    from : number (optional)
+    until : number (optional)
+    page: number (optional)
+    limit: number (optional)
+
+Response :
+    {
+    "results": [
+        {
+            "rowid": 3,
+            "name": "Peter & Lucy wedding!",
+            "location": "THA|BANGKOK",
+            "date": "2022-06-18T01:14:44.787Z",
+            "is_outside": true,
+            "attendees": [],
+            "organizer": {
+                "id": 2,
+                "name": "Azhar Khan"
+            }
+        },
+        {
+            "rowid": 4,
+            "name": "Scotiabank corporate event",
+            "location": "USA|DETROIT",
+            "date": "2022-06-17T01:14:44.787Z",
+            "is_outside": true,
+            "attendees": [],
+            "organizer": {
+                "id": 2,
+                "name": "Azhar Khan"
+            }
+        },
+        {
+            "rowid": 5,
+            "name": "Angular conference",
+            "location": "USA|NEW_YORK",
+            "date": "2022-06-17T01:14:44.787Z",
+            "is_outside": false,
+            "attendees": [],
+            "organizer": {
+                "id": 2,
+                "name": "Azhar Khan"
+            }
+        },
+        {
+            "rowid": 7,
+            "name": "Sherpa event: Softball",
+            "location": "CAN|TORONTO",
+            "date": "2022-06-17T01:14:44.787Z",
+            "is_outside": true,
+            "attendees": [],
+            "organizer": {
+                "id": 1,
+                "name": "Harriet Smith"
+            }
+        }
+    ]
+}
+
+
+GET EventByID API
+
+METHOD : "GET"
+URL : BASE_PATH/api/events/eventID
+URL Parameters : event id 
+
+example url : localhost:4040/api/events/2
+
+Response: 
+
+{
+    "rowid": 2,
+    "name": "Sherpa event: day at the beach",
+    "location": "CAN|TORONTO",
+    "date": "2022-06-14T01:14:44.787Z",
+    "is_outside": true,
+    "attendees": [],
+    "organizer": {
+        "id": 2,
+        "name": "Azhar Khan"
+    },
+    "weather": {
+        "temperature_in_celcius": 24.2,
+        "chance_of_rain": 99
+    }
+}

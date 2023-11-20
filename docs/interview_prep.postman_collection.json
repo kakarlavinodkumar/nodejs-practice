@@ -1,0 +1,438 @@
+{
+	"variables": [],
+	"info": {
+		"name": "sherpa_challenge",
+		"_postman_id": "83733581-1b0b-443f-783b-caad590bcb31",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getEvents",
+			"request": {
+				"url": {
+					"raw": "localhost:4040/api/events?from=1655034363112&until=1655334363112&page=2&limit=2",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"api",
+						"events"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "1655034363112",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "until",
+							"value": "1655334363112",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "page",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "limit",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"vinod1\",\n\t\"password\" : \"vinod\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "38d61775-11cf-4133-808d-951758ec94c7",
+					"name": "getEvents",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:4040/api/events?from=1655034363112&until=1655334363112&page=2&limit=2",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"events"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "1655034363112",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "until",
+									"value": "1655334363112",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"vinod1\",\n\t\"password\" : \"vinod\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "194",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Jun 2022 20:44:46 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c2-YepUCSrCso9TZ0Z+/s7o9jYcOEA\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 580,
+					"body": "{\"results\":[{\"rowid\":7,\"name\":\"Sherpa event: online trivia\",\"location\":\"REMOTE\",\"date\":\"2022-06-14T01:14:44.787Z\",\"is_outside\":false,\"attendees\":[],\"organizer\":{\"id\":1,\"name\":\"Harriet Smith\"}}]}"
+				},
+				{
+					"id": "e756f167-cbab-4962-bc97-3b5e6f40e7c9",
+					"name": "getEventsResponse2",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:4040/api/events?from=1655034363112&until=1655334363112&page=1&limit=2",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"events"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "1655034363112",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "until",
+									"value": "1655334363112",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": false,
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"vinod1\",\n\t\"password\" : \"vinod\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "378",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Jun 2022 20:45:17 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17a-NSaSI8Pz6E6J74VFrPc7zpqoIUw\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 202,
+					"body": "{\"results\":[{\"rowid\":1,\"name\":\"Sherpa event: bowling\",\"location\":\"CAN|TORONTO\",\"date\":\"2022-06-15T01:14:44.784Z\",\"is_outside\":false,\"attendees\":[],\"organizer\":{\"id\":1,\"name\":\"Harriet Smith\"}},{\"rowid\":2,\"name\":\"Sherpa event: day at the beach\",\"location\":\"CAN|TORONTO\",\"date\":\"2022-06-14T01:14:44.787Z\",\"is_outside\":true,\"attendees\":[],\"organizer\":{\"id\":2,\"name\":\"Azhar Khan\"}}]}"
+				}
+			]
+		},
+		{
+			"name": "getEventByID",
+			"request": {
+				"url": "localhost:4040/api/events/4",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "d9447c7d-267d-4402-b236-80b707866f04",
+					"name": "getEventByID",
+					"originalRequest": {
+						"url": "localhost:4040/api/events/4",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"disabled": false
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "179",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Jun 2022 20:49:47 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b3-/zhPbnkWNBJg228UH5LOxNzbZeE\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 75,
+					"body": "{\"rowid\":4,\"name\":\"Sherpa event: Softball\",\"location\":\"CAN|TORONTO\",\"date\":\"2022-06-17T01:14:44.787Z\",\"is_outside\":true,\"attendees\":[],\"organizer\":{\"id\":1,\"name\":\"Harriet Smith\"}}"
+				},
+				{
+					"id": "92a1c34b-7f09-4304-9b3e-3057373f4b8b",
+					"name": "getEventByIDResponse2",
+					"originalRequest": {
+						"url": "localhost:4040/api/events/400",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"disabled": false
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Jun 2022 20:50:27 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 54,
+					"body": "{}"
+				}
+			]
+		}
+	]
+}
